@@ -28,7 +28,13 @@ Just create a transition that conforms to ViewTransitionDelegate and call the vi
 With the package, you can also find a ready made transition you can use (PopupViewTransition)
 
 ```
+import ADCustomViewTransition
+
 let newView = UIView()        
 let popupViewTransition = PopupViewTransition()
 self.view.present(presentedView: newView, fromView: nil, transitionDelegate: popupViewTransition)
 ```
+
+This is how PopupViewTransition looks like:
+
+![An example of PopupViewTransition](ATCustomViewTransitions.gif)
